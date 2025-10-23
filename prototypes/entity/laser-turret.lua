@@ -12,6 +12,9 @@ entity.icons = {
     }
 }
 
+entity.attack_parameters.source_offset = { 0, -1 }
+entity.attack_parameters.ammo_type.action.action_delivery.source_offset = { 0, -1.25 }
+
 entity.graphics_set = {
     base_visualisation = {
         render_layer = "object",
@@ -119,7 +122,7 @@ entity.attacking_animation = {
             draw_as_shadow = false,
             filename =
             "__IndustrialRevolution3Assets3__/graphics/entities/machines/turrets/laser-turret-shooting-mask.png",
-            flags = {                "mask"            },
+            flags = { "mask" },
             frame_count = 1,
             height = 128,
             line_length = 8,
@@ -144,7 +147,7 @@ entity.energy_glow_animation = {
             draw_as_shadow = false,
             filename =
             "__IndustrialRevolution3Assets3__/graphics/entities/machines/turrets/laser-turret-shooting-glow.png",
-            flags = {                "light"            },
+            flags = { "light" },
             frame_count = 1,
             height = 192,
             line_length = 8,
