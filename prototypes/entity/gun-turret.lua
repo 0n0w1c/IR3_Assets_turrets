@@ -12,7 +12,8 @@ entity.icons = {
     }
 }
 
-entity.attack_parameters.projectile_creation_distance = 1.75
+entity.attack_parameters.projectile_creation_distance = 1.5
+entity.attack_parameters.projectile_center = { 0, -0.25 }
 
 entity.graphics_set = {
     base_visualisation = {
