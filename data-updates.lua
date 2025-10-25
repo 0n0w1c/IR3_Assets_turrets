@@ -14,7 +14,7 @@ require("prototypes/entity/laser-turret")
 require("prototypes/item/laser-turret")
 require("prototypes/technology/laser-turret")
 
-if mods["space-age"] then
+if mods["space-age"] and settings.startup["IR3-exclude-rocket-turret"].value == false then
     require("prototypes/entity/rocket-turret")
     require("prototypes/item/rocket-turret")
     require("prototypes/technology/rocket-turret")

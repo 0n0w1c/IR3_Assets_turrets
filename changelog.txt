@@ -1,12 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 25.10.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Startup setting to exclude the rocket turret
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 23.10.2025
   Bugfixes:
     - None
   Changes:
     - Adjusted the gun turret's muzzle flash
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 22.10.2025
@@ -14,14 +19,10 @@ Date: 22.10.2025
     - None
   Changes:
     - Adjusted the laser turret's source position
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 22.10.2025
   Bugfixes:
     - None
   Changes:
-    - None
-  Features:
     - Initial release
