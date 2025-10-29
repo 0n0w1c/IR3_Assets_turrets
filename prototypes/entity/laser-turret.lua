@@ -1,7 +1,7 @@
 local entity                                                            = data.raw["electric-turret"]["laser-turret"]
 
 entity.corpse                                                           = "medium-small-remnants"
-entity.dying_explosion                                                  = "rocket-turret-explosion"
+entity.dying_explosion                                                  = "laser-turret-explosion"
 
 entity.damaged_trigger_effect                                           = {
     {
