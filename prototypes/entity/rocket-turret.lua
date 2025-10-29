@@ -1,5 +1,74 @@
 local entity = data.raw["ammo-turret"]["rocket-turret"]
 
+entity.corpse = "medium-small-remnants"
+entity.dying_explosion                = "rocket-turret-explosion"
+
+entity.damaged_trigger_effect = {
+        {
+          damage_type_filters = {
+            "fire",
+            "impact"
+          },
+          frame_speed = 1,
+          frame_speed_deviation = 0.1,
+          initial_height = 0.5,
+          initial_vertical_speed = 0.07,
+          initial_vertical_speed_deviation = 0.1,
+          offset_deviation = {
+            {              -0.5,              -0.5            },
+            {              0.5,              0.5            }
+          },
+          particle_name = "copper-particle",
+          probability = 0.029218407596785978,
+          repeat_count = 1,
+          speed_from_center = 0.02,
+          speed_from_center_deviation = 0.01,
+          type = "create-particle"
+        },
+        {
+          damage_type_filters = {
+            "fire",
+            "impact"
+          },
+          frame_speed = 1,
+          frame_speed_deviation = 0.1,
+          initial_height = 0.5,
+          initial_vertical_speed = 0.07,
+          initial_vertical_speed_deviation = 0.1,
+          offset_deviation = {
+            {              -0.5,              -0.5            },
+            {              0.5,              0.5            }
+          },
+          particle_name = "glass-particle",
+          probability = 0.029218407596785978,
+          repeat_count = 1,
+          speed_from_center = 0.02,
+          speed_from_center_deviation = 0.01,
+          type = "create-particle"
+        },
+        {
+          damage_type_filters = {
+            "fire",
+            "impact"
+          },
+          frame_speed = 1,
+          frame_speed_deviation = 0.1,
+          initial_height = 0.5,
+          initial_vertical_speed = 0.07,
+          initial_vertical_speed_deviation = 0.1,
+          offset_deviation = {
+            {              -0.5,              -0.5            },
+            {              0.5,              0.5            }
+          },
+          particle_name = "steel-particle",
+          probability = 0.80642804967129287,
+          repeat_count = 1,
+          speed_from_center = 0.02,
+          speed_from_center_deviation = 0.01,
+          type = "create-particle"
+        }
+      }
+
 entity.icons = {
     {
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/rocket-turret.png",

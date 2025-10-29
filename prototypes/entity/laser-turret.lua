@@ -1,6 +1,138 @@
-local entity = data.raw["electric-turret"]["laser-turret"]
+local entity                                                            = data.raw["electric-turret"]["laser-turret"]
 
-entity.icons = {
+entity.corpse                                                           = "medium-small-remnants"
+entity.dying_explosion                                                  = "rocket-turret-explosion"
+
+entity.damaged_trigger_effect                                           = {
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "copper-particle",
+        probability = 0.18389248533553438,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "glass-particle",
+        probability = 0.066307386539255173,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "gold-particle",
+        probability = 0.044204924359503455,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "rubber-particle",
+        probability = 0.01768196974380138,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "steel-particle",
+        probability = 0.29882528867024337,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.07,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "iron-particle",
+        probability = 0.061886894103304835,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    }
+}
+
+entity.icons                                                            = {
     {
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/autogun-turret.png",
         icon_size = 64
@@ -12,10 +144,10 @@ entity.icons = {
     }
 }
 
-entity.attack_parameters.source_offset = { 0, -1 }
+entity.attack_parameters.source_offset                                  = { 0, -1 }
 entity.attack_parameters.ammo_type.action.action_delivery.source_offset = { 0, -1.25 }
 
-entity.graphics_set = {
+entity.graphics_set                                                     = {
     base_visualisation = {
         render_layer = "object",
         animation = {
@@ -77,7 +209,7 @@ entity.graphics_set = {
     }
 }
 
-entity.attacking_animation = {
+entity.attacking_animation                                              = {
     layers = {
         {
             direction_count = 64,
@@ -137,7 +269,7 @@ entity.attacking_animation = {
     }
 }
 
-entity.energy_glow_animation = {
+entity.energy_glow_animation                                            = {
     layers = {
         {
             blend_mode = "additive",
@@ -162,7 +294,7 @@ entity.energy_glow_animation = {
     }
 }
 
-entity.folded_animation = {
+entity.folded_animation                                                 = {
     layers = {
         {
             direction_count = 4,
@@ -219,7 +351,7 @@ entity.folded_animation = {
     }
 }
 
-entity.folding_animation = {
+entity.folding_animation                                                = {
     layers = {
         {
             apply_runtime_tint = false,
@@ -282,7 +414,7 @@ entity.folding_animation = {
     }
 }
 
-entity.prepared_animation = {
+entity.prepared_animation                                               = {
     layers = {
         {
             direction_count = 64,
@@ -341,7 +473,7 @@ entity.prepared_animation = {
     }
 }
 
-entity.preparing_animation = {
+entity.preparing_animation                                              = {
     layers = {
         {
             direction_count = 4,
