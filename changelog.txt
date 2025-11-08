@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 08.11.2025
+  Bugfixes:
+    - Updated the turret recycling icons
+  Changes:
+    - Changed startup setting to Reskin rocket turret (default: enabled)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 07.11.2025
   Bugfixes:
