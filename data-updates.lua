@@ -6,18 +6,18 @@ if not (mods["IndustrialRevolution3Assets1"]
     return
 end
 
-require("prototypes/explosion/gun-turret-explosion")
+require("prototypes/explosion/gun-turret")
 require("prototypes/entity/gun-turret")
 require("prototypes/item/gun-turret")
 require("prototypes/technology/gun-turret")
 
-require("prototypes/explosion/laser-turret-explosion")
+require("prototypes/explosion/laser-turret")
 require("prototypes/entity/laser-turret")
 require("prototypes/item/laser-turret")
 require("prototypes/technology/laser-turret")
 
 if mods["space-age"] and settings.startup["IR3-exclude-rocket-turret"].value == false then
-    require("prototypes/explosion/rocket-turret-explosion")
+    require("prototypes/explosion/rocket-turret")
     require("prototypes/entity/rocket-turret")
     require("prototypes/item/rocket-turret")
     require("prototypes/technology/rocket-turret")

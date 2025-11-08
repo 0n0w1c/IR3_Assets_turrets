@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 07.11.2025
+  Bugfixes:
+    - Incorrect entity icon assigned to the laser turret
+    - Turret explosions were not hidden in factoriopedia
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.6
 Date: 29.10.2025
   Bugfixes:
