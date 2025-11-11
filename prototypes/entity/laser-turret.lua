@@ -145,7 +145,7 @@ entity.icons                                                            = {
 }
 
 entity.attack_parameters.source_offset                                  = { 0, -1 }
-entity.attack_parameters.ammo_type.action.action_delivery.source_offset = { 0, -1.25 }
+entity.attack_parameters.ammo_type.action.action_delivery.source_offset = { 0, -1.2 }
 
 entity.graphics_set                                                     = {
     base_visualisation = {
